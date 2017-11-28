@@ -1,0 +1,128 @@
+
+.comments {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 68.26rem;
+
+	.comments-container {
+		width: 100%;
+		display: block;
+
+		.comments__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+
+			.comments__item {
+			width: 25%;
+			height: 50vh;
+			min-height: 20.3125rem;	
+			position: relative;
+			overflow: hidden;
+
+			@include tablets {
+				width: 50%;
+				height: 13.3rem;
+			}
+
+				&:hover .comments__text {
+					opacity: 1;
+				}
+
+				.comments__img {
+				min-height: 101%;
+				min-width: 101%;
+				height: 50vh;
+				filter: grayscale(100);
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				}
+
+				.comments__text {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.7);
+					padding: 2.5rem 4.375rem 0 1.25rem;
+					color: #fff;
+					opacity: 0;
+
+					@include tablets {
+						padding: 2.3rem 3.3rem 0 3.3rem;
+						margin: 0 auto;
+					}
+					
+					@include phones {
+						padding-top: 50%;
+					}
+
+					.comments__text-name {
+						font-family: 'Gagalin';
+						font-size: 0.875rem;
+
+						@include tablets {
+							text-align: center;
+						}
+					}
+
+					.comments__text-desc {
+						font-family: 'Ubuntu';
+						font-size: 0.875rem;
+						line-height: 1.75;
+
+						@include tablets {
+							text-align: center;
+						}
+
+						@include phones {
+							display: none;
+						}
+					}
+
+					.comments__text-link {
+      					font-family: 'Ubuntu';
+      					font-weight: 500;
+      					font-style: normal;
+      					font-size: 0.8125rem;
+      					text-transform: uppercase;
+      					background-color: #333;
+      					padding: 0.5625rem 0.125rem 0.5rem 0;
+      					width: 6.875rem;
+      					border-radius: 0.375rem;
+      					text-align: center;
+      					color: #fff;
+      					display: block;
+      					height: 2.1875rem;
+      					width: 6.875rem;
+      					text-decoration: none;
+
+      					@include tablets {
+							margin: 0 auto;
+						}
+
+						@include phones {
+							margin-top: 1.3rem;
+						}
+
+      					}
+      					.comment__text-more:hover {
+        					background-color: #1f1f1f; }
+				}
+			}
+		
+
+		
+		}
+	}
+	
+	
+}

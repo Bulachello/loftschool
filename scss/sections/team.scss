@@ -1,0 +1,224 @@
+.team {
+	width: 100%;
+	background-image: url(../img/twoboys.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.team__content {
+	box-sizing: border-box;
+	width: 49%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(49, 49, 49, 0.903226);
+	padding: 4.3rem 0 0 5rem; 
+
+	@include tablets {
+		width: 100%;
+		left: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.team__title {
+		margin: 0;
+		font-family: 'Gagalin';
+		font-size: 4.5rem;
+		color: #f9b43b;
+		margin-bottom: 5.625rem;
+
+		@include tablets {
+			width: 100%;
+			text-align: center;
+			margin-top: 7rem;
+			margin-bottom: 10rem;
+		}
+	}
+
+	.team__people {
+		width: 23.75rem;
+		list-style: none;
+		margin: -1.125rem 0 0 0;
+		padding: 0;
+
+		@include tablets {
+			width: 23.2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@include phones {
+			margin: -1.125rem 0 0 0;
+		}
+
+		.team__people-item {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0.75rem;
+
+			@include tablets {
+				width: 100%;
+			}
+
+
+			.team__people-top {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1.2rem;
+				cursor: pointer;
+
+				@include tablets {
+					justify-content: center;
+				}
+
+				.team__people-name {
+					color: #fff;
+					font-family: 'Gagalin';
+					font-size: 0.875rem;
+
+					@include tablets {
+						font-size: 1.56rem;
+						text-align: center;
+					}
+
+				}
+
+				.team__people-icon {
+				width: 0.625rem;
+				height: 0.375rem;
+				margin-right: 0.625rem;
+				background-image: url(../img/Polygon1.svg);
+				background-repeat:  no-repeat;
+
+				}
+			}
+
+			.team__people-bottom {
+				display: flex;
+				justify-content: flex-start;
+				opacity: 0;
+				overflow: hidden;
+				height: 0;
+
+				.team__people-portret {
+					
+					width: 6.25rem;
+					height: 6.25rem;
+					border-radius: 50%;
+					position: relative;
+					overflow: hidden;
+					margin-left: 0.9375rem;
+
+					.team__people-img {
+						position: absolute;
+						height: 6.25rem;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				.team__people-info {
+						width: 13.125rem;
+						margin-left: 1.3rem;
+						margin-top: -0.1875rem;
+
+						@include phones {
+							margin-left: 0;
+						}
+
+						.team__people-occ {
+							font-family: 'Ubuntu';
+							font-size: 0.875rem;
+							font-weight: bold;
+							color: #fff;
+							margin-bottom: 0.9rem;
+						}
+
+						.team__people-text {
+							font-family: 'Ubuntu';
+							font-size: 0.875rem;
+							color: #fff;
+							line-height: 1.39rem;
+							width: 15.3125rem;
+						}
+					}
+			}
+
+			
+		}
+
+		.team__people-item_active {
+
+			@include tablets {
+				width: 100%;
+				margin-bottom: 0.6rem;
+			}
+
+			.team__people-top {
+				.team__people-name {
+					color: #f9b43b;
+				}
+
+				.team__people-icon {
+				width: 0.625rem;
+				height: 0.375rem;
+				margin-right: 0.625rem;
+				background-image: url(../img/Polygon1.svg);
+				background-repeat:  no-repeat;
+				transform: rotate(180deg);
+				transform-origin: center;
+				}
+			}
+
+			.team__people-bottom {
+				opacity: 1;
+				height: auto;
+				margin-bottom: 1.63rem;
+
+				@include tablets {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.team__people-portret {
+					@include tablets {
+						margin-bottom: 1.53333rem;
+					}
+				}
+
+				.team__people-info {
+					
+					@include tablets {
+						width: 100%;
+					}
+
+					.team__people-occ {
+						@include tablets {
+							text-align: center;
+						}
+					}
+
+					.team__people-text {
+						@include tablets {
+							width: 100%;
+							text-align: center;
+							line-height: 1.5rem;
+						}
+
+					}
+
+				}
+			}
+			
+		}
+	}
+}

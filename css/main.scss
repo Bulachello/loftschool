@@ -1,0 +1,18 @@
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+@import "../scss/layout/media.scss";
+@import "../scss/layout/base.scss";
+@import "../scss/sections/navigation.scss";
+@import "../scss/sections/welcom.scss";
+@import "../scss/sections/webest.scss";
+@import "../scss/sections/order.scss";
+@import "../scss/sections/team.scss";
+@import "../scss/sections/menu.scss";
+@import "../scss/sections/comments.scss";
+@import "../scss/sections/form.scss";
+@import "../scss/sections/map.scss";
+

@@ -1,0 +1,199 @@
+.webest__cover {
+	padding: 0 0.9rem;
+
+	@include tablets {
+		padding: 0 1.5rem;
+	}
+}
+
+.webest {
+	width: 100%;
+	background: url('../img/bg.svg') no-repeat center top / cover;
+	background-size: cover;
+	padding-top: 3.75rem;
+	box-sizing: border-box;
+
+	.webest__title {
+		font-family: Gagalin;
+		font-size: 4.5rem;
+		color: #000;
+		text-align: center;
+		box-sizing: border-box;
+		margin-bottom: 4.5625rem;
+
+		@include tablets {
+			margin-bottom: 11.1rem;
+			margin-top: 3.2rem;
+			letter-spacing: 0.2rem;
+		}
+
+		@include phones {
+			font-size: 10.5vw;
+			margin-bottom: 6rem;
+			margin-top: 4.2rem;
+		}
+	}
+
+	.webest__content {
+		display: flex;
+		justify-content: space-between;
+
+		@include tablets {
+			padding: 0 0 0 20px;
+		}
+
+		@include phones {
+			flex-direction: column;
+		}
+		
+		.webest__content-img {
+			margin-bottom: 1.6875rem;
+
+			@include tablets {
+				margin-left: -1rem;
+			}
+		}
+
+		.webest__content-title {
+			font-family: 'LIfehack';
+			font-size: 1.5rem;
+			color: #000;
+			margin-bottom: 1.125rem;
+			line-height: 1.2em;
+
+			@include tablets {
+				margin-bottom: 11.1rem;
+				line-height: auto;
+			}
+
+			@include phones {
+				font-size: 4.4vw;
+			}
+		}
+
+		.webest__content-text {
+			font-family: 'Ubuntu';
+			font-size: 0.875rem;
+			color: #757474;
+			text-align: auto;
+			margin-left: 0.4375rem;
+			line-height: 1.71em;
+
+			@include tablets {
+				margin-left: 0;
+				line-height: 1.56rem;
+			}
+		}
+
+		.webest__content-item {
+			width: 18.75rem;
+			text-align: center;
+
+			@include tablets {
+				width: 224px;
+			}
+
+			@include phones {
+				display: flex;
+				width: 100%;
+				margin-bottom: 3.2rem;
+			}
+
+			&:first-child  {
+				margin-right: -0.3125rem;
+
+				.webest__content-img {
+					margin-left: -1.5625rem;
+				}
+
+				.webest__content-item-row {
+
+					 .webest__content-title {
+					 	margin-bottom: 1rem;
+
+					 	@include tablets {
+					 		margin-bottom: 1.2rem;
+   							margin-left: -1.625rem;
+					 	}
+					 }
+
+					 .webest__content-text {
+					 	margin-left: -1rem;
+
+					 	@include tablets {
+					 		margin-left: -2.66667rem;
+   							line-height: 1.56rem;
+					 	}
+					 }
+				}
+				
+			}
+
+			&:nth-child(2)  {
+
+				.webest__content-img {
+					margin-bottom: 1.9rem;
+				}
+
+				.webest__content-item-row {
+
+					 .webest__content-title {
+					 	margin-bottom: 1.1rem;
+					 	margin-left: -1.6667rem;
+					 }
+
+					 .webest__content-text {
+					 	margin-left: 0.4375rem;
+
+					 	@include tablets {
+					 		width: 220px;
+					 		margin-left: -1rem;
+					 	}
+					 }
+				}
+				
+			}
+
+			&:last-child  {
+
+				.webest__content-img {
+					margin-left: 1.75rem;
+					margin-bottom: 2.4375rem;
+
+					@include tablets {
+						margin-bottom: 2.6rem;
+						margin-left: auto;
+					}
+				}
+
+
+				.webest__content-item-row {
+					margin-left: 1.25rem;
+					width: 18.5rem;
+
+					@include tablets {
+						width: 224px;
+						margin-left: auto;
+					}
+
+					 .webest__content-title {
+					 	margin-bottom: 0.5rem;
+
+					 	@include tablets {
+					 		margin-bottom: 0.6rem;
+					 	}
+					 }
+
+					 .webest__content-text {
+					 	margin-left: -1rem;
+
+					 	@include tablets {
+					 		margin-left: -1rem;
+					 	}
+					 }
+				}
+				
+			}
+		}
+	}
+}

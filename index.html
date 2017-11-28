@@ -3,76 +3,97 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Burger - for results</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
 		<section class="welcom-page">
 			<div class="container">
-				<div class="header">
-					<div class="header__logo">
-						<img src="img/logo.svg" alt="" class="header__logo-img">
+				<div class="welcome-page-content">
+					<div class="header">
+						<div class="header__logo">
+							<img src="img/logo.svg" alt="" class="header__logo-img">
+						</div>
+						<div class="header__sidebar">
+							<ul class="header__sidebar-nav">
+								<li class="header__sidebar-item">
+								 	<a href="" class="header__sidebar-link">О НАС</a>
+								</li>
+								<li class="header__sidebar-item">
+								 	<a href="" class="header__sidebar-link">БУРГЕРЫ</a>
+								</li>
+								<li class="header__sidebar-item">
+								 	<a href="" class="header__sidebar-link">КОМАНДА</a>
+								</li>
+								<li class="header__sidebar-item">
+								 	<a href="" class="header__sidebar-link">МЕНЮ</a>
+								</li>
+								<li class="header__sidebar-item">
+								 	<a href="" class="header__sidebar-link">ОТЗЫВЫ</a>
+								</li>
+								<li class="header__sidebar-item">
+								 	<a href="" class="header__sidebar-link">КОНТАКТЫ</a>
+								</li>
+							</ul>
+							<button class="header__submit" type="submit">ЗАКАЗАТЬ
+							</button>
+							<nav class="nav-burger">
+								<a href="#" class="nav-burger__link">
+									<div class="nav-burger__row"></div>
+									<div class="nav-burger__row"></div>
+									<div class="nav-burger__row"></div>
+								</a>
+							</nav>
+						</div>
 					</div>
-					<div class="header__sidebar">
-						<ul class="header__sidebar-nav">
-							<li class="header__sidebar-item">
-							 	<a href="" class="header__sidebar-link">О НАС</a>
-							</li>
-							<li class="header__sidebar-item">
-							 	<a href="" class="header__sidebar-link">БУРГЕРЫ</a>
-							</li>
-							<li class="header__sidebar-item">
-							 	<a href="" class="header__sidebar-link">КОМАНДА</a>
-							</li>
-							<li class="header__sidebar-item">
-							 	<a href="" class="header__sidebar-link">МЕНЮ</a>
-							</li>
-							<li class="header__sidebar-item">
-							 	<a href="" class="header__sidebar-link">ОТЗЫВЫ</a>
-							</li>
-							<li class="header__sidebar-item">
-							 	<a href="" class="header__sidebar-link">КОНТАКТЫ</a>
-							</li>
-						</ul>
-						<button class="header__submit" type="submit">ЗАКАЗАТЬ
-						</button>
-					</div>
-				</div>
 
-				<div class="content-welcome">
-					<img src="img/Burger.png" alt="" class="content-welcome__burger">
-					<div class="content-welcome__text">
-						<span class="content-welcome__yellow">МЫ ДЕЛАЕМ</span><br>
-						<span class="content-welcome__white">натуральные бургеры</span>
+					<div class="content-welcome">
+						<div class="c-w-img">
+							<img src="img/Burger.png" alt="" class="content-welcome__burger">
+						</div>
+						<div class="content-welcome__text">
+							<span class="content-welcome__yellow">МЫ ДЕЛАЕМ</span><br>
+							<span class="content-welcome__white">натуральные бургеры</span>
+						</div>
 					</div>
-				</div>
 
-				<a class="arrow-scrool" href="">
-					<img src="img/arrow-scroll.svg" alt="" class="arrow-scrool-img">
-				</a>
+					<a class="arrow-scrool" href="">
+						<img src="img/arrow-scroll.svg" alt="" class="arrow-scrool-img">
+					</a>
+				</div>
 			</div>
 		</section>
 
 		<section class="webest">
 			<div class="container">
-			<div class="webest__title">МЫ ЛУЧШИЕ</div>
-			<div class="webest__content">
+			<div class="webest__cover">
+				<div class="webest__title">МЫ ЛУЧШИЕ</div>
+				<div class="webest__content">
 				<div class="webest__content-item">
 					<img src="img/meat.svg" alt="" class="webest__content-img">
-					<div class="webest__content-title">100% свежее мясо</div>
-					<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+					<div class="webest__content-item-row">
+						<div class="webest__content-title">100% свежее мясо</div>
+						<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+					</div>
 				</div>
 				<div class="webest__content-item">
 					<img src="img/hand.svg" alt="" class="webest__content-img">
-					<div class="webest__content-title">Ручная  сборка</div>
-					<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+					<div class="webest__content-item-row">
+						<div class="webest__content-title">Ручная  сборка</div>
+						<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+					</div>
 				</div>
 				<div class="webest__content-item">
 					<img src="img/natural.svg" alt="" class="webest__content-img">
-					<div class="webest__content-title">Натуральные ингредиенты</div>
-					<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+					<div class="webest__content-item-row">
+						<div class="webest__content-title">Натуральные ингредиенты</div>
+						<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+					</div>
 				</div>
 			</div>
+			</div>
+				
 			</div>
 		</section>	
 
@@ -181,7 +202,7 @@
 							<li class="team__people-item">
 								<div class="team__people-top">
 									<div class="team__people-icon"></div>
-									<div class="team__people-name">Ричард Джеймс</div>
+									<div class="team__people-name">Дэниэл Редклиф</div>
 								</div>
 								<div class="team__people-bottom">
 									<div class="team__people-portret">
@@ -198,7 +219,7 @@
 							<li class="team__people-item team__people-item_active">
 								<div class="team__people-top">
 									<div class="team__people-icon"></div>
-									<div class="team__people-name">Ричард Джеймс</div>
+									<div class="team__people-name">Джейк Финн</div>
 								</div>
 								<div class="team__people-bottom">
 									<div class="team__people-portret">
@@ -215,7 +236,7 @@
 							<li class="team__people-item">
 								<div class="team__people-top">
 									<div class="team__people-icon"></div>
-									<div class="team__people-name">Ричард Джеймс</div>
+									<div class="team__people-name">Николай Иванов</div>
 								</div>
 								<div class="team__people-bottom">
 									<div class="team__people-portret">
@@ -250,6 +271,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="menu">
 			<div class="menu__content">
 				<h2 class="menu__content-title">Меню</h2>
@@ -281,6 +303,7 @@
 				</ul>
 			</div>
 		</section>
+
 		<section class="comments">
 			<div class="comments-container">
 				<ul class="comments__list">
@@ -351,91 +374,95 @@
 				</ul>
 			</div>
 		</section>	
+
 		<section class="form">
 			<div class="container">
-				<h2 class="form__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
-				<div class="form__content">
-					<form action="" class="section-form">
-						<div class="form__content-part">
-							<div class="content-part__column">
-								<div class="content-part__block">
-									<span class="content-part__text">Имя</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-								<div class="content-part__block">
-									<span class="content-part__text">Телефон</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-							</div>
-							<div class="content-part__column">
-								<div class="content-part__block">
-									<span class="content-part__text">Улица</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-							</div>
-							<div class="content-part__column">
-								<div class="content-part__block">
-									<span class="content-part__text">Дом</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-								<div class="content-part__block">
-									<span class="content-part__text">Корпус</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-								<div class="content-part__block">
-									<span class="content-part__text">Квартира</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-								<div class="content-part__block">
-									<span class="content-part__text">Этаж</span><br>
-									<input type="text" class="content-part__input">
-								</div>
-							</div>
-						</div>
-						<div class="form__content-part">
-							<div class="content-part__column">
-								<div class="content-part__block">
-									<span class="content-part__text">Комментарий</span><br>
-									<textarea name="" id="" cols="30" rows="10" class="content-part__textarea"></textarea>
-								</div>
-							</div>
-							<div class="content-part__column">
-								<label for="need" class="content-part__label">
-									<input type="radio" name="money" id="need" class="content-part__input-radio" value="need">
-									<div class="content-part__div">
-										<span class="content-part__div-span"></span>
+				<div class="form-container">
+					<h2 class="form__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
+					<div class="form__content">
+						<form action="" class="section-form">
+							<div class="form__content-part">
+								<div class="content-part__column">
+									<div class="content-part__block">
+										<span class="content-part__text">Имя</span><br>
+										<input type="text" class="content-part__input">
 									</div>
-									<span class="content-part__text">Потребуется сдача</span>
-								</label>
-								<label for="card" class="content-part__label">
-									<input type="radio" name="money" id="card" class="content-part__input-radio" value="card">
-									<div class="content-part__div">
-										<span class="content-part__div-span"></span>
+									<div class="content-part__block">
+										<span class="content-part__text">Телефон</span><br>
+										<input type="text" class="content-part__input">
 									</div>
-									<span class="content-part__text">Потребуется сдача</span>
-								</label>
-							</div>
-							<div class="content-part__column">
-								<label for="disturb" class="order-disturb">
-									<input type="checkbox" name="disturb" value="disturb" class="order-disturb__input" id="disturb">
-									<div class="order-disturb__checkbox">
-										<img src="img/like.svg" alt="" class="order-disturb__img">
+								</div>
+								<div class="content-part__column">
+									<div class="content-part__block">
+										<span class="content-part__text">Улица</span><br>
+										<input type="text" class="content-part__input">
 									</div>
-									<span class="order-disturb__text">Не перезванивать</span>
-								</label>
-							</div>
-							<div class="content-part__column">
-								<div class="form__row">
-									<button class="header__submit" type="submit">ЗАКАЗАТЬ
-									</button>
-									<div class="form__clear"><a class="form__clear-link" href="#" data-goto="6">Очистить</a></div>
+								</div>
+								<div class="content-part__column">
+									<div class="content-part__block">
+										<span class="content-part__text">Дом</span><br>
+										<input type="text" class="content-part__input">
+									</div>
+									<div class="content-part__block">
+										<span class="content-part__text">Корпус</span><br>
+										<input type="text" class="content-part__input">
+									</div>
+									<div class="content-part__block content-part__block-margin">
+										<span class="content-part__text">Квартира</span><br>
+										<input type="text" class="content-part__input">
+									</div>
+									<div class="content-part__block content-part__block-none">
+										<span class="content-part__text">Этаж</span><br>
+										<input type="text" class="content-part__input">
+									</div>
 								</div>
 							</div>
-						</div>
-					</form>
+							<div class="form__content-part">
+								<div class="content-part__column">
+									<div class="content-part__block">
+										<span class="content-part__text">Комментарий</span><br>
+										<textarea name="" id="" cols="30" rows="10" class="content-part__textarea"></textarea>
+									</div>
+								</div>
+								<div class="content-part__column">
+									<label for="need" class="content-part__label">
+										<input type="radio" name="money" id="need" class="content-part__input-radio" value="need">
+										<div class="content-part__div">
+											<span class="content-part__div-span"></span>
+										</div>
+										<span class="content-part__text">Потребуется сдача</span>
+									</label>
+									<label for="card" class="content-part__label">
+										<input type="radio" name="money" id="card" class="content-part__input-radio" value="card">
+										<div class="content-part__div">
+											<span class="content-part__div-span"></span>
+										</div>
+										<span class="content-part__text">Потребуется сдача</span>
+									</label>
+								</div>
+								<div class="content-part__column">
+									<label for="disturb" class="order-disturb">
+										<input type="checkbox" name="disturb" value="disturb" class="order-disturb__input" id="disturb">
+										<div class="order-disturb__checkbox">
+											<img src="img/like.svg" alt="" class="order-disturb__img">
+										</div>
+										<span class="order-disturb__text">Не перезванивать</span>
+									</label>
+								</div>
+								<div class="content-part__column">
+									<div class="form__row">
+										<button class="header__submit" type="submit">ЗАКАЗАТЬ
+										</button>
+										<div class="form__clear"><a class="form__clear-link" href="#" data-goto="6">Очистить</a></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>
+		
 		<section class="map">
 			<div class="footer">
 				<div class="container footer__half">	

@@ -1,0 +1,253 @@
+.order {
+	width: 100%;
+	background: #f9b43b;
+	box-sizing: border-box;
+
+	.container {
+		@include tablets {
+		width: 100%;
+		}
+	}
+}
+
+.order__content {
+	display: flex;
+
+	@include tablets {
+		flex-direction: column;
+		padding: 14.3rem 17%;
+		margin-bottom: 1rem;
+	}
+
+	@include phones {
+		padding: 30% 2.02%;
+	}
+
+	.order__content-left {
+		width: 28.75rem;
+		margin-right: 1.5rem;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		position: relative;
+
+		@include tablets {
+			width: 100%;
+			margin-right: 0;
+			height: auto;
+		}
+
+		@include phones {
+			max-height: 18rem;
+		}
+
+		.order__content-burger {
+			width: 100%;
+			margin-top: 8.125rem;
+
+			@include tablets {
+				margin-top: 0;
+			}
+
+			@include phones {
+				margin-top: 0;
+			}
+		}
+
+		.order__content-top {
+			position: absolute;
+			top: 5.625rem;
+			left: 0;
+			display: flex;
+
+			@include tablets {
+				top: -5.3rem;
+				left: 1.1rem;
+			}
+
+			@include phones {
+				top: -5.3rem;
+			}
+
+			.order__content-watch {
+			width: 90px;
+			height: 90px;
+			background-color: #f08c33;
+			border-radius: 0.625rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			cursor: pointer;
+			}
+
+			.order__content-composition {
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+
+			.order__content-watch:hover +  .order__content-composition {
+				width: 17rem;
+				height: 20.875rem;
+				background: #fff;
+				opacity: 0.9;
+				border-radius: 0.3125rem;
+
+				.order__content-list {
+					list-style: none;
+					padding: 0 0 0 1.25rem;
+					font-family: 'Ubuntu';
+					font-size: 0.875rem;
+					font-weight: medium;
+
+					.order__content-item {
+						display: flex;
+						align-items: center;
+						margin-bottom: 0.625rem;
+
+						.order__content-product{
+							display: flex;
+							align-items: center;
+
+							.order__content-burger {
+								width: 3.125rem;
+								height: 2.5rem;
+							}
+
+							.order__content-text {
+								font-weight: light;
+								margin-left: 1.5625rem;
+							}
+						}
+
+						.order__content-gramm {
+							margin-left: 4.0625rem;
+						}
+					}
+				}
+			}
+		}
+		
+		.order__content-menu-text {
+			font-family: 'Gagalin';
+			font-size: 0.875rem;
+			color: #fff;
+		}
+
+		.order__content-bottom {
+			position: absolute;
+			width: 90px;
+			height: 90px;
+			bottom: 5.3125rem;
+			left: -0.75rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			cursor: pointer;
+
+			@include tablets {
+				top: -6rem;
+				right: 0.3rem;
+				left: auto;
+			}
+
+			@include phones {
+				top: -5.3rem;
+			}
+
+
+		}
+	}
+
+	.order__content-right {
+		width: 50%;
+		padding-top: 1rem;
+
+		@include tablets {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@include phones {
+				padding: 0;
+			}
+
+		.order__content-title {
+			font-family: 'Gagalin';
+			font-size: 4.5rem;
+			color: #fff;
+			line-height: 4.2rem;
+			margin-bottom: 2.3175rem;
+
+			@include tablets {
+				text-align: center;
+				margin-left: -1rem;
+				margin-bottom: 1.3rem;
+				line-height: 4.4rem;
+			}
+
+			@include phones {
+				text-align: center;
+			}
+		}
+
+		.order__content-text {
+			font-family: 'Ubuntu';
+			font-size: 0.875rem;
+			color: #fff;
+			font-weight: light;
+			line-height: 1.5rem;
+			margin-bottom: 0.625rem;
+
+			@include tablets {
+				text-align: center;
+				width: 115%;
+				margin-bottom: 2rem;
+			}
+
+			@include phones {
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		.order__content-cost {
+			display: flex;
+			align-items: flex-end;
+
+			@include tablets {
+				margin-left: auto;
+			}
+			
+			.order__submit {
+				margin-bottom: 0.4375rem;
+
+				@include tablets {
+					margin-bottom: auto;
+				}
+			}
+
+			.order__content-price {
+				font-family: 'Gagalin';
+				font-weight: bold;
+				color: #e35028;
+				font-size: 1.875rem;
+				margin-right: 0.9375rem;
+
+				@include tablets {
+					margin-right: 2rem;
+				}
+
+				.order__content-number {
+					font-size: 4.5rem;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

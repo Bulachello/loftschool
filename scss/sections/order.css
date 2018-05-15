@@ -1,0 +1,80 @@
+/*
+Error: Undefined mixin 'tablets'.
+        on line 7 of C:\Users\User\Desktop\Loftschool - LandingPage\scss\sections\order.scss, in `tablets'
+        from line 7 of C:\Users\User\Desktop\Loftschool - LandingPage\scss\sections\order.scss
+
+2: 	width: 100%;
+3: 	background: #f9b43b;
+4: 	box-sizing: border-box;
+5: 
+6: 	.container {
+7: 		@include tablets {
+8: 			width: 100%;
+9: 		}
+10: 	}
+11: }
+12: 
+
+Backtrace:
+C:\Users\User\Desktop\Loftschool - LandingPage\scss\sections\order.scss:7:in `tablets'
+C:\Users\User\Desktop\Loftschool - LandingPage\scss\sections\order.scss:7
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+D:/App/Koala Sass/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+D:/App/Koala Sass/bin/sass:18:in `load'
+D:/App/Koala Sass/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of C:\Users\User\Desktop\Loftschool - LandingPage\scss\sections\order.scss, in `tablets'\A         from line 7 of C:\Users\User\Desktop\Loftschool - LandingPage\scss\sections\order.scss\A \A 2: 	width: 100%;\A 3: 	background: #f9b43b;\A 4: 	box-sizing: border-box;\A 5: \A 6: 	.container {\A 7: 		@include tablets {\A 8: 			width: 100%;\A 9: 		}\A 10: 	}\A 11: }\A 12: "; }

@@ -1,32 +1,33 @@
-.order {
+#order {
 	width: 100%;
 	background: #f9b43b;
 	box-sizing: border-box;
 
 	.container {
 		@include tablets {
-		width: 100%;
+			width: 100%;
 		}
 	}
 }
 
 .order__content {
 	display: flex;
+	height: 100%;
 
 	@include tablets {
 		flex-direction: column;
-		padding: 14.3rem 17%;
+		padding: 14.3rem 0;
 		margin-bottom: 1rem;
 	}
 
 	@include phones {
-		padding: 30% 2.02%;
+		padding: 33.6% 2.02%;
 	}
 
 	.order__content-left {
 		width: 28.75rem;
 		margin-right: 1.5rem;
-		height: 100vh;
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		position: relative;
@@ -35,6 +36,7 @@
 			width: 100%;
 			margin-right: 0;
 			height: auto;
+			padding: 0 17%;
 		}
 
 		@include phones {
@@ -42,8 +44,8 @@
 		}
 
 		.order__content-burger {
-			width: 100%;
-			margin-top: 8.125rem;
+			width: 108%;
+			margin-left: -1rem;
 
 			@include tablets {
 				margin-top: 0;
@@ -62,11 +64,13 @@
 
 			@include tablets {
 				top: -5.3rem;
-				left: 1.1rem;
+				left: auto;
+				right: 69%;
 			}
 
 			@include phones {
-				top: -5.3rem;
+				top: -7.85rem;
+				left: 0;
 			}
 
 			.order__content-watch {
@@ -96,7 +100,7 @@
 
 				.order__content-list {
 					list-style: none;
-					padding: 0 0 0 1.25rem;
+					padding: 0.3125rem 0 0 1.5rem;
 					font-family: 'Ubuntu';
 					font-size: 0.875rem;
 					font-weight: medium;
@@ -105,10 +109,17 @@
 						display: flex;
 						align-items: center;
 						margin-bottom: 0.625rem;
+						width: 14.375rem;
+						height: 2.5rem;
+						justify-content: space-between;
 
 						.order__content-product{
 							display: flex;
 							align-items: center;
+
+							.order__content-img {
+								width: 45px;
+							}
 
 							.order__content-burger {
 								width: 3.125rem;
@@ -139,7 +150,7 @@
 			position: absolute;
 			width: 90px;
 			height: 90px;
-			bottom: 5.3125rem;
+			bottom: 5rem;
 			left: -0.75rem;
 			display: flex;
 			justify-content: center;
@@ -149,12 +160,13 @@
 
 			@include tablets {
 				top: -6rem;
-				right: 0.3rem;
-				left: auto;
+				left: 71%;
 			}
 
 			@include phones {
-				top: -5.3rem;
+				top: -8.28rem;
+				right: -0.7rem;
+				left: auto;
 			}
 
 
@@ -170,11 +182,12 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			padding: 0 17%;
 		}
 
 		@include phones {
-				padding: 0;
-			}
+			padding: 21px 0;
+		}
 
 		.order__content-title {
 			font-family: 'Gagalin';
@@ -182,16 +195,21 @@
 			color: #fff;
 			line-height: 4.2rem;
 			margin-bottom: 2.3175rem;
+			margin-top: 3.75rem;
 
 			@include tablets {
 				text-align: center;
 				margin-left: -1rem;
-				margin-bottom: 1.3rem;
+				margin-bottom: 1.533rem;
 				line-height: 4.4rem;
+				margin-top: 0;
 			}
 
 			@include phones {
 				text-align: center;
+				font-size: 49px;
+				width: 287px;
+				margin-bottom: 1rem;
 			}
 		}
 
@@ -207,11 +225,16 @@
 				text-align: center;
 				width: 115%;
 				margin-bottom: 2rem;
+				font-size: 0.93rem;
 			}
 
 			@include phones {
 				text-align: center;
 				width: 100%;
+				font-size: 14px;
+				margin-left: 0px;
+				line-height: 23px;
+				margin-bottom: 11px;
 			}
 		}
 
@@ -220,14 +243,14 @@
 			align-items: flex-end;
 
 			@include tablets {
-				margin-left: auto;
+				margin-left: 0;
 			}
 			
 			.order__submit {
 				margin-bottom: 0.4375rem;
 
 				@include tablets {
-					margin-bottom: auto;
+					margin-bottom: 0;
 				}
 			}
 
@@ -242,10 +265,30 @@
 					margin-right: 2rem;
 				}
 
+				@include phones {
+					margin-right: -24px;
+					font-size: 22px;
+					width: 196px;
+				}
+
 				.order__content-number {
 					font-size: 4.5rem;
 					margin: 0;
 					padding: 0;
+
+					@include phones {
+						font-size: 47px;
+						margin: -6px;
+						padding: 0px;
+					}
+				}
+
+				.order__submit {
+					
+					@include phones {
+						margin-bottom: 3px;
+						margin-left: -27px;
+					}
 				}
 			}
 		}

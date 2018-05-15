@@ -1,4 +1,4 @@
-.menu {
+#menu {
 	height: 100vh;
 	width: 100%;
 
@@ -23,6 +23,12 @@
 				left: 1.6rem;
 				top: 6.3rem;
 			}
+
+			@include phones {
+				left: 4rem;
+				top: 3.28rem;
+				font-size: 3.42rem;
+			}
 		}
 
 	.menu__slide {
@@ -33,16 +39,19 @@
 		justify-content: flex-end;
 		width: 100%;
 		height: 100%;
-		position: absolute;
-		z-index: 1;
 
 
 		.menu__slide-item {
-			width: 5rem;
+			width: 5.33rem;
 			height: 100%;
 			position: relative;
 			display: flex;
 			overflow: hidden;
+			cursor: pointer;
+
+			@include phones {
+				width: 5.78rem;
+			}
 
 			.menu__slide-img {
 				height: 100%;
@@ -54,7 +63,6 @@
 				background-color: rgba(27, 27, 27, 0.61);
 				display: flex;
 				justify-content: flex-start;
-				z-index: 2;
 				width: 100%;
 
 				.menu__slide-title {
@@ -69,27 +77,59 @@
 				    position: absolute;
 				    transform: rotate(-90deg) translate(-50%, -50%);
 				    top: 15%;
-				    left: -8.0625rem;
+					left: -8.0625rem;
+					z-index: 1;
+
+					@include phones {
+						text-align: auto;
+						bottom: 48%;
+						top: auto;
+					}
 				}
 
 				.menu__slide-text {
 					font-family: 'Ubuntu';
 					margin: 0;
+					padding-right: 50px;
 				    padding: 3.9375rem 2.1875rem;
 				    font-size: 0.875rem;
 				    position: absolute;
 				    width: 34.1875rem;
-				    color: #fff;
+					color: #fff;
+					left: 5.78rem;
 				    background-color: rgba(49, 49, 49, 0.7);
 				    height: 100%;
-				    left: 5rem;
 				    line-height: 1.5rem;
-				    font-weight: 500;
+					font-weight: 500;
+					z-index: 1;
 				}
 			}
 
 			&:hover {
-				width: 100%;
+				width: 48.75rem;
+				position: absolute;
+				opacity: 0.8;
+				z-index: 3;
+
+				@include tablets {
+					width: calc(100% - 10.66rem);
+				}
+
+				.menu__slide-info {	
+					.menu__slide-text {
+						padding-right: 5rem;
+						width: 540px;
+
+						@include tablets {
+						}
+					}
+				}
+
+				@include tablets {
+					width: 100%;
+					position: absolute;
+					transition: 0;
+				}
 
 				@include phones {
 					width: 100%;
@@ -99,9 +139,12 @@
 
 				.menu__slide-text {
 					width: 100%;
+
+					@include tablets {
+					}
 				}
 			}
-
+r
 			&:hover .menu__slide-img {
 					transform: translate(-10%, 0%);
 				}

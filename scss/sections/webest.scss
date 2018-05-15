@@ -1,17 +1,25 @@
 .webest__cover {
-	padding: 0 0.9rem;
+	
 
 	@include tablets {
-		padding: 0 1.5rem;
+		
+	}
+
+	@include phones {
+		padding: 0 0rem 0 1.5rem;
 	}
 }
 
-.webest {
+#webest {
 	width: 100%;
 	background: url('../img/bg.svg') no-repeat center top / cover;
 	background-size: cover;
-	padding-top: 3.75rem;
+	padding: 3.75rem 0.625rem;
 	box-sizing: border-box;
+
+	@include phones {
+		padding: 3.14rem 0.21rem;
+	}
 
 	.webest__title {
 		font-family: Gagalin;
@@ -29,8 +37,10 @@
 
 		@include phones {
 			font-size: 10.5vw;
-			margin-bottom: 6rem;
-			margin-top: 4.2rem;
+			margin-bottom: 5.57rem;
+			letter-spacing: 0px;
+			margin-top: 0;
+			margin-left: -0.57rem;
 		}
 	}
 
@@ -39,51 +49,91 @@
 		justify-content: space-between;
 
 		@include tablets {
-			padding: 0 0 0 20px;
+			padding: 0 0 0 1.42rem;
 		}
 
 		@include phones {
 			flex-direction: column;
+			padding: 0;
 		}
+
+		.webest__content-item {
+			
+			@include phones{
+				margin-bottom: 3.86rem;
+			}
+
+			.w-c-i-box {
+			height: 5.625rem;
+			margin-bottom: 1.5635rem;
+
+				@include tablets {
+					margin-bottom: 2.46rem;
+				}
+
+				@include phones {
+					height: 6.43rem;
+					margin-bottom: 0px;
+					margin-right: 2.14rem;
+					min-width: 6.93rem;
+					text-align: center;
+				}
+
+				.webest__content-img {
+
+					@include tablets {
+						margin-left: -1rem;
+					}
+
+					@include phones {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		.webest__content-item-row {
+			.webest__content-title {
+				font-family: 'LIfehack';
+				font-size: 1.5rem;
+				color: #000;
+				margin-bottom: 0.8125rem;
+				line-height: 1.2em;
+
+				@include tablets {
+					margin-bottom: 0.73rem;
+					line-height: auto;
+				}
+
+				@include phones {
+					margin-top: -0.35rem;
+					font-size: 1.64rem;
+					margin-bottom: 1.14rem;
+				}
+			}
+
+			.webest__content-text {
+				font-family: 'Ubuntu';
+				font-size: 0.875rem;
+				color: #757474;
+				text-align: auto;
+				margin-left: 0.4375rem;
+				line-height: 1.71em;
+
+				@include tablets {
+					margin-left: 0;
+					line-height: 1.56rem;
+				}
+
+				@include phones {
+					font-size: 1rem;
+				}
+			}
+		}
+
 		
-		.webest__content-img {
-			margin-bottom: 1.6875rem;
 
-			@include tablets {
-				margin-left: -1rem;
-			}
-		}
-
-		.webest__content-title {
-			font-family: 'LIfehack';
-			font-size: 1.5rem;
-			color: #000;
-			margin-bottom: 1.125rem;
-			line-height: 1.2em;
-
-			@include tablets {
-				margin-bottom: 11.1rem;
-				line-height: auto;
-			}
-
-			@include phones {
-				font-size: 4.4vw;
-			}
-		}
-
-		.webest__content-text {
-			font-family: 'Ubuntu';
-			font-size: 0.875rem;
-			color: #757474;
-			text-align: auto;
-			margin-left: 0.4375rem;
-			line-height: 1.71em;
-
-			@include tablets {
-				margin-left: 0;
-				line-height: 1.56rem;
-			}
-		}
+		
 
 		.webest__content-item {
 			width: 18.75rem;
@@ -94,106 +144,12 @@
 			}
 
 			@include phones {
+				width: auto;
+				text-align: left;
+				flex-direction: row;
 				display: flex;
-				width: 100%;
-				margin-bottom: 3.2rem;
 			}
 
-			&:first-child  {
-				margin-right: -0.3125rem;
-
-				.webest__content-img {
-					margin-left: -1.5625rem;
-				}
-
-				.webest__content-item-row {
-
-					 .webest__content-title {
-					 	margin-bottom: 1rem;
-
-					 	@include tablets {
-					 		margin-bottom: 1.2rem;
-   							margin-left: -1.625rem;
-					 	}
-					 }
-
-					 .webest__content-text {
-					 	margin-left: -1rem;
-
-					 	@include tablets {
-					 		margin-left: -2.66667rem;
-   							line-height: 1.56rem;
-					 	}
-					 }
-				}
-				
-			}
-
-			&:nth-child(2)  {
-
-				.webest__content-img {
-					margin-bottom: 1.9rem;
-				}
-
-				.webest__content-item-row {
-
-					 .webest__content-title {
-					 	margin-bottom: 1.1rem;
-					 	margin-left: -1.6667rem;
-					 }
-
-					 .webest__content-text {
-					 	margin-left: 0.4375rem;
-
-					 	@include tablets {
-					 		width: 220px;
-					 		margin-left: -1rem;
-					 	}
-					 }
-				}
-				
-			}
-
-			&:last-child  {
-
-				.webest__content-img {
-					margin-left: 1.75rem;
-					margin-bottom: 2.4375rem;
-
-					@include tablets {
-						margin-bottom: 2.6rem;
-						margin-left: auto;
-					}
-				}
-
-
-				.webest__content-item-row {
-					margin-left: 1.25rem;
-					width: 18.5rem;
-
-					@include tablets {
-						width: 224px;
-						margin-left: auto;
-					}
-
-					 .webest__content-title {
-					 	margin-bottom: 0.5rem;
-
-					 	@include tablets {
-					 		margin-bottom: 0.6rem;
-					 	}
-					 }
-
-					 .webest__content-text {
-					 	margin-left: -1rem;
-
-					 	@include tablets {
-					 		margin-left: -1rem;
-					 	}
-					 }
-				}
-				
-			}
 		}
 	}
 }

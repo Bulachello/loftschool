@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<section class="welcom-page">
+		<section id="welcom-page">
 			<div class="container">
 				<div class="welcome-page-content">
 					<div class="header">
@@ -65,27 +65,33 @@
 			</div>
 		</section>
 
-		<section class="webest">
+		<section id="webest">
 			<div class="container">
 			<div class="webest__cover">
 				<div class="webest__title">МЫ ЛУЧШИЕ</div>
 				<div class="webest__content">
 				<div class="webest__content-item">
-					<img src="img/meat.svg" alt="" class="webest__content-img">
+					<div class="w-c-i-box">
+						<img src="img/meat.svg" alt="" class="webest__content-img">
+					</div>
 					<div class="webest__content-item-row">
 						<div class="webest__content-title">100% свежее мясо</div>
 						<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
 					</div>
 				</div>
 				<div class="webest__content-item">
-					<img src="img/hand.svg" alt="" class="webest__content-img">
+					<div class="w-c-i-box">
+						<img src="img/hand.svg" alt="" class="webest__content-img">
+					</div>
 					<div class="webest__content-item-row">
 						<div class="webest__content-title">Ручная  сборка</div>
 						<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
 					</div>
 				</div>
 				<div class="webest__content-item">
-					<img src="img/natural.svg" alt="" class="webest__content-img">
+					<div class="w-c-i-box">
+						<img src="img/natural.svg" alt="" class="webest__content-img">
+					</div>
 					<div class="webest__content-item-row">
 						<div class="webest__content-title">Натуральные ингредиенты</div>
 						<div class="webest__content-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
@@ -97,7 +103,7 @@
 			</div>
 		</section>	
 
-		<section class="order">
+		<section id="order">
 			<div class="container">
 				<div class="order__content">
 					<div class="order__content-left">
@@ -122,51 +128,51 @@
 									<li class="order__content-item">
 										<div class="order__content-product">
 											<img src="img/composition/buns.png" alt="" class="order__content-img">
-											<div class="order__content-text">Говядина</div>
+											<div class="order__content-text">Булочки</div>
 										</div>
 										
 										<div class="order__content-gramm">
-											300г
+											100г
 										</div>
 									</li>
 									<li class="order__content-item">
 										<div class="order__content-product">
 											<img src="img/composition/salad.png" alt="" class="order__content-img">
-											<div class="order__content-text">Говядина</div>
+											<div class="order__content-text">Зелень</div>
 										</div>
 										
 										<div class="order__content-gramm">
-											300г
+											70г
 										</div>
 									</li>
 									<li class="order__content-item">
 										<div class="order__content-product">
 											<img src="img/composition/sauce.png" alt="" class="order__content-img">
-											<div class="order__content-text">Говядина</div>
+											<div class="order__content-text">Соус</div>
 										</div>
 										
 										<div class="order__content-gramm">
-											300г
+											150г
 										</div>
 									</li>
 									<li class="order__content-item">
 										<div class="order__content-product">
 											<img src="img/composition/cucumber.png" alt="" class="order__content-img">
-											<div class="order__content-text">Говядина</div>
+											<div class="order__content-text">Овощи</div>
 										</div>
 										
 										<div class="order__content-gramm">
-											300г
+											200г
 										</div>
 									</li>
 									<li class="order__content-item">
 										<div class="order__content-product">
 											<img src="img/composition/cheese.png" alt="" class="order__content-img">
-											<div class="order__content-text">Говядина</div>
+											<div class="order__content-text">Сыр</div>
 										</div>
 										
 										<div class="order__content-gramm">
-											300г
+											80г
 										</div>
 									</li>
 								</ul>
@@ -193,7 +199,7 @@
 			</div>
 		</section>
 
-		<section class="team">
+		<section id="team">
 			<div class="container">
 				<div class="team__content">
 					<h2 class="team__title">КОМАНДА</h2>
@@ -217,6 +223,23 @@
 								</div>
 							</li>
 							<li class="team__people-item team__people-item_active">
+								<div class="team__people-top">
+									<div class="team__people-icon"></div>
+									<div class="team__people-name">Ричард Джеймс</div>
+								</div>
+								<div class="team__people-bottom">
+									<div class="team__people-portret">
+										<img src="img/aphex.jpg" alt="" class="team__people-img">
+									</div>
+									<div class="team__people-info">
+										<div class="team__people-occ">Оператор</div>
+										<div class="team__people-text">
+											С радостью поможет подобрать идеальный бургер и оформить заказ.  
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="team__people-item">
 								<div class="team__people-top">
 									<div class="team__people-icon"></div>
 									<div class="team__people-name">Джейк Финн</div>
@@ -250,29 +273,12 @@
 									</div>
 								</div>
 							</li>
-							<li class="team__people-item">
-								<div class="team__people-top">
-									<div class="team__people-icon"></div>
-									<div class="team__people-name">Ричард Джеймс</div>
-								</div>
-								<div class="team__people-bottom">
-									<div class="team__people-portret">
-										<img src="img/aphex.jpg" alt="" class="team__people-img">
-									</div>
-									<div class="team__people-info">
-										<div class="team__people-occ">Оператор</div>
-										<div class="team__people-text">
-											С радостью поможет подобрать идеальный бургер и оформить заказ.  
-										</div>
-									</div>
-								</div>
-							</li>
 						</ul>
 				</div>
 			</div>
 		</section>
 
-		<section class="menu">
+		<section id="menu">
 			<div class="menu__content">
 				<h2 class="menu__content-title">Меню</h2>
 				<ul class="menu__slide">
@@ -304,7 +310,7 @@
 			</div>
 		</section>
 
-		<section class="comments">
+		<section id="comments">
 			<div class="comments-container">
 				<ul class="comments__list">
 					<li class="comments__item">
@@ -320,7 +326,7 @@
 						<div class="comments__text">
 							<div class="comments__text-name">Константин Спилберг</div>
 							<p class="comments__text-desc">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-							<a href="" class="comments__text-link">ПОДРОБНЕЕ</a>
+							<a href="" class="comments__text-link">ЧИТАТЬ ДАЛЕЕ</a>
 						</div>
 					</li>
 					<li class="comments__item">
@@ -375,7 +381,7 @@
 			</div>
 		</section>	
 
-		<section class="form">
+		<section id="form">
 			<div class="container">
 				<div class="form-container">
 					<h2 class="form__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
@@ -437,7 +443,7 @@
 										<div class="content-part__div">
 											<span class="content-part__div-span"></span>
 										</div>
-										<span class="content-part__text">Потребуется сдача</span>
+										<span class="content-part__text">Оплата по карте</span>
 									</label>
 								</div>
 								<div class="content-part__column">
@@ -463,7 +469,7 @@
 			</div>
 		</section>
 		
-		<section class="map">
+		<section id="map">
 			<div class="footer">
 				<div class="container footer__half">	
 					<div class="footer__col">
@@ -511,42 +517,12 @@
 
 		<nav class="nav-buttons">
 			<ul class="nav-buttons__list">
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link nav-buttons__link-active">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
-				<li class="nav-buttons__item">
-					<a href="" class="nav-buttons__link">
-					</a>
-				</li>
+				<!-- on javascript -->
 			</ul>
 		</nav>
 	</div>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

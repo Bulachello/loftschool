@@ -1,5 +1,4 @@
-
-.comments {
+#comments {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -27,7 +26,12 @@
 
 			@include tablets {
 				width: 50%;
-				height: 13.3rem;
+				height: 17.06667rem;
+				min-height: auto;
+			}
+
+			@include phones {
+				height: 14.28rem;
 			}
 
 				&:hover .comments__text {
@@ -62,7 +66,10 @@
 					}
 					
 					@include phones {
-						padding-top: 50%;
+						display: flex;
+						align-content: center;
+						flex-direction: column;
+						padding: 38px 32px;
 					}
 
 					.comments__text-name {
@@ -71,6 +78,11 @@
 
 						@include tablets {
 							text-align: center;
+						}
+
+						@include phones {
+							font-size: 24px;
+							margin-bottom: 24px;
 						}
 					}
 
@@ -102,15 +114,21 @@
       					color: #fff;
       					display: block;
       					height: 2.1875rem;
-      					width: 6.875rem;
-      					text-decoration: none;
+      					text-decoration: none; 
 
       					@include tablets {
 							margin: 0 auto;
 						}
 
 						@include phones {
-							margin-top: 1.3rem;
+							font-weight: 600;
+							text-decoration: none;
+							letter-spacing: -1px;
+							width: 128px;
+							height: 33px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
 						}
 
       					}

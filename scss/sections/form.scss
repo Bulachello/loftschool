@@ -1,10 +1,15 @@
-.form {
+#form {
 	width: 100%;
 	height: 100vh;
 	background-image: url(../img/bg-form.jpg);
 	
 	@include tablets {
-		margin-top: 12.9rem;
+		padding-top: 7rem;
+		min-height: 1024px;
+	}
+
+	@include phones {
+		padding-top: 4rem;
 	}
 	
 	.container {
@@ -12,7 +17,12 @@
 		
 		@include tablets {
 			width: 100%;
-			
+			max-height: 650px;
+		}
+
+		@include phones {
+			width: 100%;
+			max-height: 650px;
 		}
 	}
 }
@@ -21,11 +31,22 @@
 	font-family: 'Gagalin';
 	font-size: 4.5rem;
 	color: #f9b43b;
-	padding-top: 4.4rem;
 	text-align: center;
 	box-sizing: border-box; 
-	margin-bottom: 4.4rem;
+	margin-bottom: 4.2rem;
 	letter-spacing: -0.125rem;
+
+	@include tablets {
+		margin-bottom: 4.7rem;
+		letter-spacing: 0.06rem;
+	}
+
+	@include phones {
+		margin-bottom: 34px;
+		letter-spacing: 0.06rem;
+		font-size: 46px;
+		padding: 0 2px;
+	}
 }
 
 .content-part__div {
@@ -43,20 +64,22 @@
 					    }
 
 .form-container {
-	padding: 0 4.375rem;
 	width: 100%;
 
 	@include tablets {
-		padding: 0 19.2%;
+		
 	}
 
 	@include phones {
-		padding: 0 2%;
+		padding: 0 2.3%;
 	}
 }
 
 .form__content {
 	
+	@include tablets {
+		margin: 0 19.2%;
+	}
 
 	.section-form {
 		display: flex;
@@ -85,7 +108,7 @@
 
 				@include tablets {
 					display: flex;
-					justify-content: center;
+					margin-bottom: .267rem;
 				}
 				.content-part__block {
 					margin-bottom: 0.7rem;
@@ -105,12 +128,20 @@
 				display: flex;
 				justify-content: flex-start;
 
+				@include tablets {
+					justify-content: start;
+				}
+
 
 				.content-part__block {
-					margin-bottom: 1.11rem;
+					margin-bottom: 1rem;
 					flex: 1;
 					margin-right: 1.09rem;
     				position: relative;
+
+    				@include phones {
+    					margin-bottom: 16px;
+    				}
 
 					.content-part__text {
 						font-family: 'Ubuntu';
@@ -123,8 +154,8 @@
 					.content-part__input {
 						color: #000;
 						width: 100%;
-						margin-top: 0.3rem;
-						height: 2.1875rem;
+						margin-top: .4rem;
+						height: 2.33rem;
 						border: 0.125rem solid transparent;
 						border-radius: 0.3125rem;
 						padding: 0.5rem;
@@ -142,6 +173,15 @@
 						margin-top: 0.4rem;
 						padding: 0.5rem;
 						color: #000;
+
+						@include tablets {
+							height: 7.2rem;
+						}
+
+						@include phones {
+							margin-top: 0.6rem;
+							height: 7.71rem;
+						}
 
 						&:focus {
 							border: 0.1rem solid #e45028;
@@ -170,8 +210,13 @@
 
 				.content-part__label {
 					justify-content: flex-start;
-    				margin-right: 1.2rem;
+    				margin-right: 1.6rem;
 					margin-bottom: 1rem;
+
+					@include phones {
+						margin-bottom: 1rem;
+						margin-left: 12px;
+					}
 
 
 					.content-part__input-radio {
@@ -179,7 +224,6 @@
 					    vertical-align: middle;
 					    position: absolute;
 					    left: -9999px;
-
 					}
 
 					.content-part__input-radio:checked + .content-part__div .content-part__div-span {
@@ -211,6 +255,10 @@
 						font-size: 0.875rem;
 						display: inline-block;
 						color: #fff;
+
+						@include phones {
+							font-size: 1rem;
+						}
 						
 					}
 
@@ -234,7 +282,12 @@
   position: relative;
   margin-top: 0.625rem;
   margin-left: -0.0625rem;
-  margin-bottom: 1.16rem; }
+  margin-bottom: 1.16rem; 
+	
+	@include phones {
+		margin: 0;
+	}
+}
   .order-disturb__input {
     display: inline-block;
     vertical-align: middle;
@@ -265,7 +318,12 @@
     color: #fff;
     font-size: 0.875rem;
     margin: 0;
-    margin-left: 0.6rem; }
+    margin-left: 0.6rem;
+
+    @include phones {
+    	font-size: 1rem;
+    } 
+}
 
 .order-disturb__input:checked + .order-disturb__checkbox .order-disturb__img {
   width: 0.625rem;
@@ -276,6 +334,14 @@
 	justify-content: center;
 	align-items: center;
 	margin-left: 0.3125rem;
+
+	@include tablets {
+		margin: 1.2rem auto auto 0;
+	}
+
+	@include phones {
+		width: 100%;
+	}
 
 	.form__clear {
 		font-family: 'Ubuntu';
